@@ -1,0 +1,8 @@
+{
+  "jsxBracketSameLine": false,
+  "htmlWhitespaceSensitivity": "ignore",
+  "printWidth": 80,
+  "jsxSingleQuote": true,
+  "semi": false,
+  "singleQuote": true
+}
