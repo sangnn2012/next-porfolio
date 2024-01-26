@@ -1,15 +1,47 @@
-[ SangNguyen ] - Portfolio Website
-Introduction
-Welcome to the repository for my personal portfolio website. This site showcases my professional skills, projects, and experiences as a [Your Profession, e.g., Software Developer, Graphic Designer, etc.]. It serves as a digital footprint demonstrating my journey and accomplishments in [Your Field/Industry].
+# [ SangNguyen ] - Portfolio Website
 
-Features
-About Me: A brief introduction to who I am, my journey, and what motivates me.
-Projects: A showcase of my selected projects, detailing my skills and the technologies I use.
-Resume: A downloadable version of my professional resume.
-Blog: [If applicable] My writings and thoughts on industry trends, technologies, and personal experiences.
-Contact: A form or details through which visitors can reach out to me.
-Technologies Used
-Frontend: [List technologies, e.g., React.js, HTML, CSS, JavaScript]
-Backend: [If applicable, e.g., Node.js, Python, Django]
-Deployment: [e.g., Vercel, Netlify, AWS]
-Others: [Any other technologies or tools used, e.g., Git, Figma]
+## Getting Started
+
+This guide will help you set up and run this Next.js project on your local machine.
+
+### Prerequisites
+
+- **Node.js (v18 or later)**: This project requires Node.js version 18 or later for compatibility with Next.js. You can use a Node version manager like `nvm` to easily switch between Node.js versions if you are working on multiple projects.
+
+### Installation
+
+Follow these steps to get your development environment running:
+
+1. **Install Node.js**: 
+   - Download and install Node.js (v18 or later) from the [Node.js official website](https://nodejs.org/).
+   - If you are using `nvm`, you can install and use Node.js version 18 by running:
+
+     ```bash
+     nvm install 18
+     nvm use 18
+     ```
+
+2. **Clone the Repository**:
+   - Use the following Git command to clone the project repository:
+
+     ```bash
+     git clone [repository URL]
+     ```
+
+3. **Install Dependencies**:
+   - Navigate to the project's root directory and install the required dependencies:
+
+     ```bash
+     cd [project-directory]
+     npm install
+     ```
+
+### Running the Project
+
+- Once the installation is complete, start the project by executing:
+
+  ```bash
+  npm run dev
+    ```
+
+- URL: http://localhost:3000/
