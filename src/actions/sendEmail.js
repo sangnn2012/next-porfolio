@@ -1,30 +1,34 @@
 'use server'
 
-export const sendEmail = async (event) => {
-    event.preventDefault();
+import { Resend } from 'resend'
+import { validateString, getErrorMessage } from '@/lib/utils'
+import { ContactFormTemplate } from '@/email/emailTemplate'
 
-    // Creating a new FormData object to collect the form data
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData.entries());
+const resend = new Resend(process.env.RESEND_API_KEY)
 
-    // Making the API request
+export const sendEmail = async (formData) => {
     try {
-        const response = await fetch('api-endpoint', {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        });
+        const senderEmail = formData.get('senderEmail');
+        const message = formData.get('senderText');
 
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+        if (validateString(senderEmail) === false) {
+            return {
+                error: 'Invalid sender email',
+            }
         }
 
-        // Handle the response data here
-        const responseData = await response.json();
-        console.log(responseData);
+        if (validateString(message) === false) {
+            return {
+                error: 'Invalid Message', 
+            }
+        }
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        return { success: true, message: 'Send email successfully' };
     } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
+        return {
+            error: getErrorMessage(error),
+        }
     }
 };
