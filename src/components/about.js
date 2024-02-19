@@ -17,34 +17,33 @@ export default function About() {
         transition={{ delay: 0.175 }}
         id="about"
     >
-        <SectionHeading>About me</SectionHeading>
+      <SectionHeading>About me</SectionHeading>
 
-        <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+      <p className="mb-3">
+        As a Senior Front-end Engineer with over 6 years of extensive experience in web application development, 
+        focusing predominantly on frontend technologies, I have excelled in creating dynamic, responsive, 
+        and intuitive user interfaces across various business domains such as Web3, healthcare, 
+        hotel management, and law process management. <br />
+        My technical arsenal is fortified with a deep understanding of frontend frameworks 
+        like <span className="font-medium">Vue 2, Vue 3</span>, and <span className="font-medium">React/React hooks</span>, 
+        complemented by state management libraries including <span className="font-medium">Redux, Recoil, VueX</span>, 
+        and <span className="font-medium">Pinia</span>. I am proficient in <span className="font-medium">JavaScript and ES6+</span>, 
+        <span className="font-medium">TypeScript</span>, <span className="font-medium">HTML5</span>, 
+        and <span className="font-medium">CSS3</span>, alongside modern bundling tools and micro-frontend architecture. <br />
+        My commitment to best coding practices and a pragmatic development style, along with excellent problem-solving skills 
+        and a knack for continuous learning, drive my contributions to innovative projects. Fluent in English with an IELTS score of 7.0, 
+        I effectively collaborate with global and multicultural teams, applying Agile and Scrum methodologies to ensure project success. <br />
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">When I'm not working</span>I engage in regular
+        <span className="font-medium">workouts</span> and cherish <span className="font-medium">travelling </span> 
+        to discover diverse cultures and sceneries. Professionally, I'm expanding my expertise into 
+        <span className="font-medium"> backend development with Node.js</span> and the intriguing realm of 
+        <span className="font-medium"> Machine Learning</span>. Moreover, I've begun participating in 
+        <span className="font-medium"> Kaggle challenges</span>, sharpening my data science skills in a competitive setting.
       </p>
+
     </motion.section>
   )
 }

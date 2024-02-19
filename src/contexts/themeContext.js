@@ -33,7 +33,7 @@ export default function ThemeContextProvider({ children }) {
             setTheme("dark")
             document.documentElement.classList.add("dark")
         }
-    },[])
+    }, [])
 
     return <ThemeContext.Provider value={{ theme, toggleTheme }}> {children} </ThemeContext.Provider>
 }

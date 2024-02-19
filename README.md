@@ -44,4 +44,4 @@ Follow these steps to get your development environment running:
   npm run dev
     ```
 
-- URL: http://localhost:3000/
+- URL: http://localhost:3001/

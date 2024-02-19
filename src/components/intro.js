@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import avatar from '@/public/avatar.jpeg';
+import avatar from '@/public/main-avatar.jpg';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
@@ -14,7 +14,10 @@ import { useActiveSectionContext } from '@/contexts/activeSectionContext';
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
+    const data = {
+        linkedIn: 'https://www.linkedin.com/in/sang-nguyen-177791100/',
+        github: 'https://github.com/sangnn2012',
+    }
     return (
         <section ref={ref} id="home" className="mb-28 max-w-[54rem] text-center sm:mb-0 scroll-mt-[100rem]">
             <div className="flex items-center justify-center">
@@ -44,7 +47,7 @@ export default function Intro() {
                 <span className="font-bold">front-end developer</span> with{" "}
                 <span className="font-bold">6 years</span> of experience. <br/> 
                 I enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
-                <span className="underline">React (Next.js)</span>.
+                <span className="underline">ReactJS and VueJS</span>.
             </motion.p>
 
             <motion.div 
@@ -66,7 +69,7 @@ export default function Intro() {
                 </Link>
                 <a 
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                    href="/CV.pdf" 
+                    href="/SangNguyenResume.pdf" 
                     download
                 >
                     Download CV 
@@ -74,14 +77,14 @@ export default function Intro() {
                 </a>
                 <a 
                     className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                    href="https://linkedin.com" 
+                    href={data.linkedIn}
                     target="_blank"
                 >
                     <BsLinkedin/>
                 </a>
                 <a 
                     className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                    href="https://github.com" 
+                    href={data.github}
                     target="_blank"
                 >
                     <FaGithubSquare/>
